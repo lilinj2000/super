@@ -162,11 +162,36 @@ cleanAll()
     for p in $projects_all
     do
 	cd ../$p
+	# ./configure
 	make distclean
     done
 }
 
-#cleanAll
+showFileStatus()
+{
+    for p in $projects_all
+    do
+	cd ../$p
+	echo `pwd`
+	git status
+    done
+}
+
+commitAll()
+{
+    for p in $projects_all
+    do
+	cd ../$p
+	echo `pwd`
+	git status
+
+	git add .
+	git commit -m "small updated."
+	git pull
+	git push
+    done
+
+}
 
 Main()
 {
@@ -180,6 +205,8 @@ Main()
     echo "[4] build & deploy app"
     echo "[5] build & deploy foal"
     echo "[6] build & deploy flash"
+    echo "[7] show file status"
+    echo "[8] commit all"
     echo "----------------"
 
     read -p "Please Select A Number: " mc
@@ -195,6 +222,10 @@ Main()
 	5) deployFoal
 	    ;;
 	6) deployFlash
+	    ;;
+	7) showFileStatus
+	    ;;
+	8) commitAll
 	    ;;
 	0) exit 0
 	    ;;
