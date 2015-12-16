@@ -3,7 +3,7 @@
 #### fm8 ###################
 cd ~/md_test/fm8/flash_v1_01/bin
 source ./tcp_env.sh
-./flash_tcp 2>/dev/null &
+./flash_tcp >/dev/null 2>&1 &
 
 #cd ~/md_test/fm8/flash_v1_21/bin
 #source ./tcp_env.sh
