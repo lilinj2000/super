@@ -1,3 +1,3 @@
 #! /bin/bash
 
-sudo docker run --rm -t -i -v $HOME:/llj lilinj2000/centos-dev:latest
+sudo docker run --rm -t -i -v $HOME:/root lilinj2000/centos-dev:latest
