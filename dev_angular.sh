@@ -1,3 +1,5 @@
 #! /bin/sh
 
-docker run -d --rm -i -h angular -p 32780:4200 -v ~:/root lilinj2000/dev:angular /bin/bash
+. func.sh
+
+docker run -d --rm -i -h angular -p 32780:4200 -v $v_path:/root lilinj2000/dev:angular /bin/bash
