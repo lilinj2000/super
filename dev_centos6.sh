@@ -8,3 +8,4 @@ docker run -d --rm -i \
 	-e PS1="[dev@centos6 \w]\$ " \
 	-v ~:/home/llj \
 	lilinj2000/dev:centos6
+

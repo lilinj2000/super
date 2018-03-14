@@ -1,3 +1,7 @@
 #! /bin/sh
 
-docker run --rm -t -i -h centos7 -v ~/:/root lilinj2000/dev:centos7
+. func.sh
+
+docker run --rm -t -i -d -h centos7 -v $v_path:/root lilinj2000/dev:centos7
+
+
