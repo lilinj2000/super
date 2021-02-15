@@ -3,7 +3,7 @@
 docker run -d --rm -i \
 	-h centos7 \
 	-e PS1="[dev@centos7.gcc \w]\$ " \
-	-v //c/docker:/root \
+	-v //c/Users/linj_/Documents/GitHub:/root \
 	lilinj2000/dev:centos7.gcc
 
 	# -v //c/docker/src/super/passwd:/etc/passwd:ro \
