@@ -5,6 +5,7 @@ docker run -d --rm -i \
 	-e PS1="[dev@centos7.gcc \w]\$ " \
 	-v //c/Users/linj_/Documents/GitHub:/root/GitHub \
 	-v //c/Users/linj_/Documents/GitLab:/root/GitLab \
+	-v //c/Users/linj_/Documents/llj/hanlin/pkgs:/root/ydpkgs \
 	lilinj2000/dev:centos7.gcc
 
 	# -v //c/docker/src/super/passwd:/etc/passwd:ro \
